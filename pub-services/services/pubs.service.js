@@ -4,21 +4,13 @@ const pubsJson = require('../mocks/pubs.json');
 const moment = require('moment');
 
 function getAllPubs(){
-  console.log('Liste de tous les bars : ');
-  for (var i in pubsJson) {
-    var pub = pubsJson[i];
-    console.log(' - ' + pub['name']);
-  }
+  return pubsJson;
 }
 
 function getOpenPubs() {
-  console.log('Liste des bars ouverts : ');
-  for (var i in pubsJson) {
-    var pub = pubsJson[i];
-    if(pub['openDays'].includes(getCurrentDay())){
-      console.log(' - ' + pub['name']);
-    }
-  }
+  return getAllPubs().filter(function (pub) {
+    return pub.openDays.includes(getCurrentDay());
+  })
 }
 
 function getCurrentDay(){

@@ -9,7 +9,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bin": {
+    "pub-cli": "bin/index.js"
+  },
+"preferGlobal": true,
   "dependencies": {
+    "commander": "^2.19.0",
     "pub-services": "../pub-services"
   }
 }
