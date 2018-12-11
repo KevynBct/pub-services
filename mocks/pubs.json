@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Arawak",
+    "owner": {
+      "firstName": "Nicolas",
+      "lastName": "Hodicq",
+      "mail": "nhodicq@bewizyu.com"
+    },
+    "openDays": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "openHours": {
+      "start": 10,
+      "end": 1
+    },
+    "drinks": [
+      {
+        "type": "Blonde",
+        "name": "Triple Karmeliet"
+      }
+    ]
+  },
+  {
+    "name": "Smooth Pub",
+    "owner": {
+      "firstName": "Kevyn",
+      "lastName": "Buchet",
+      "mail": "kevyn.buchet@gmail.com"
+    },
+    "openDays": [
+      "Saturday",
+      "Sunday"
+    ],
+    "openHours": {
+      "start": 12,
+      "end": 3
+    },
+    "drinks": [
+      {
+        "type": "Soda",
+        "name": "Coca fraise"
+      }
+    ]
+  }
+]
