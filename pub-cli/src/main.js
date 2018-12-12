@@ -1,5 +1,5 @@
 
-var pubsServices = require('pub-services');
+let pubsServices = require('pub-services');
 
 module.exports = {
     getAllPubs : pubsServices.pubsServices.getAllPubs,

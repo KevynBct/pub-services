@@ -21,6 +21,10 @@
       {
         "type": "Blonde",
         "name": "Triple Karmeliet"
+      },
+      {
+        "type": "Brune",
+        "name": "Nom de bière brune"
       }
     ]
   },

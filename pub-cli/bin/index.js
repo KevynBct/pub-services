@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 
-var program = require('commander');
+let program = require('commander');
 const _ = require('../src/main');
 
 program
