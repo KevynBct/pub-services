@@ -1,3 +1,4 @@
 .gitignore
 pub-services/node_modules
 pub-cli/node_modules
+pub-rest-api/node_modules
