@@ -3,7 +3,7 @@
 const pubsJson = require('../mocks/pubs.json');
 const moment = require('moment');
 
-function getAllPubs(){
+ function getAllPubs(){
   let allPubs = pubsJson.map(pub => {
     let {name, owner, openDays, openHours, drinks} = pub;
     return new Pub(name, owner, openDays, openHours, drinks);
@@ -12,9 +12,7 @@ function getAllPubs(){
 }
 
 function getOpenPubs() {
-  return getAllPubs().filter(function (pub) {
-    return pub.openDays.includes(getCurrentDay());
-  })
+  return getAllPubs().filter(pub => pub.openDays.includes(getCurrentDay()));
 }
 
 function getCurrentDay(){
