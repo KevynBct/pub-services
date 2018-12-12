@@ -9,6 +9,12 @@ app.get('/pubs', function (req, res) {
 
 })
 
+app.get('/openPubs', function (req, res) {
+  const pubs = pubsServices.getOpenPubs();
+  res.status(200).json(pubs);
+
+})
+
 var server = app.listen(3000, function() {
   console.log('Listening on port %d', server.address().port);
 });
